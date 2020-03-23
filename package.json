@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-proxy-server",
+  "version": "1.0.0",
+  "description": "Proxy-server between frontend and backend",
+  "main": "src/sever.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "npm run build && nodemon dist/server.js",
+    "serve": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ielkanyuk/nodejs-proxy-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ielkanyuk/nodejs-proxy-server/issues"
+  },
+  "homepage": "https://github.com/ielkanyuk/nodejs-proxy-server#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "nodemon": "^2.0.2"
+  }
+}
